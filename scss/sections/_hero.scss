@@ -1,0 +1,50 @@
+.hero {
+  min-height: 690px;
+}
+
+.promo {
+  margin: 127px 0 0 40px;
+  max-width: 490px;
+  color: $WhiteTheme;
+}
+
+.promo__title {
+  margin: 0 0 10px;
+  font-family: 'Merriweather', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 120px;
+}
+
+.promo__description {
+  margin-bottom: 25px;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 400px;
+  }
+
+  .promo {
+    max-width: 390px;
+    margin: 70px 0 0 40px;
+    &__title {
+      font-size: 31px;
+      line-height: 43px;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+    &__description {
+      line-height: 24px;
+      margin-bottom: 60px;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .promo {
+    margin-left: 0;
+  }
+}

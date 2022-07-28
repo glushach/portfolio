@@ -1,0 +1,70 @@
+@import "common/fonts";
+@import "common/varialbes";
+@import "common/mixins";
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+.body-black {
+  background: $BlackTheme;
+  color: $WhiteTheme;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  overflow-x:hidden;
+}
+.body-light {
+  background: $WhiteTheme;
+  color: $BlackTheme;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+svg:hover path {
+  transition: 1s all;
+  color: $LightBrownTheme;
+  fill: $LightBrownTheme;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: url("../assets/img/bg.jpg") no-repeat top center;
+}
+.wrapper {
+  padding: 0 20px;
+  &_portfolio, &_price {
+    padding: 0 10px;
+  }
+}
+@import "common/button";
+@import "common/title-section";
+
+@import "header/header";
+
+@import "sections/hero";
+@import "sections/skills";
+@import "sections/portfolio";
+@import "sections/video";
+@import "sections/price";
+@import "sections/contacts";
+
+@import "footer/footer";
+
+@media (max-width: 768px) {
+  .container {
+    background: url("../assets/img/bg-sm.jpg") no-repeat top center;
+  }
+}

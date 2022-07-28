@@ -1,0 +1,64 @@
+.btn, .tab {
+  width: 220px;
+  height: 55px;
+  font-size: 20px;
+  border: 2px solid $LightBrownTheme;
+  outline: $LightBrownTheme;
+  background: transparent;
+  color: $LightBrownTheme;
+  position: relative;
+  overflow: hidden;
+}
+.tab-light {
+  width: 220px;
+  height: 55px;
+  font-size: 20px;
+  border: 2px solid $LightBrownTheme;
+  outline: $LightBrownTheme;
+  background: transparent;
+  color: $BlackTheme;
+}
+.tab-light:hover {
+  background: $LightBrownTheme;
+}
+.pulse:hover, .pulse:focus, .video__play-pulse:hover, .video__play-pulse:focus {
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+  animation: pulse 1s;
+}
+.video__play-pulse {
+  border-radius: 50%;
+}
+@keyframes pulse {
+  0%{box-shadow: 0 0 0 0 #ffdc7f}
+}
+
+.btn:hover, .btn_active:hover {
+  cursor: pointer;
+  transition: 1s all;
+  color: $WhiteTheme;
+}
+.tab:hover {
+  cursor: pointer;
+  transition: 1s all;
+  background: $LightBrownTheme;
+  color: $WhiteTheme;
+}
+.btn_mx-5px {
+  margin: 0 2.5px;
+}
+.btn_active {
+  background: $LightBrownTheme;
+  color: $BlackTheme;
+}
+
+.btn_tab-active {
+  background: $LightBrownTheme;
+  color: $BlackTheme !important; // чтобы hover не перебивал стили активной кнопки
+  cursor: default !important; // чтобы hover не перебивал стили активной кнопки
+}
+
+@media (max-width: 768px) {
+  .btn_mx-5px {
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,22 @@
+.tabs {
+  @include flex(center, flex-start, row, nowrap);
+  margin-bottom: 41px;
+}
+.portfolio {
+  @include flex(center, flex-start, row, wrap);
+  img {
+    display: flex;
+  }
+}
+.portfolio__promo {
+  max-width: 450px;
+  margin: 25px 11.5px 0 11.5px;
+}
+
+@media (max-width: 768px) {
+  .tabs {
+    max-width: 455px;
+    margin: 0 auto 31px auto;
+    @include flex(center, flex-start, row, wrap);
+  }
+}
